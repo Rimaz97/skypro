@@ -1,0 +1,468 @@
+/* Общие стили */
+$light-grey:rgb(247, 246, 246);
+$dark-grey:rgb(136, 136, 136);
+$dark:rgb(0, 0, 0);
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.svg:hover path{
+    fill: black;
+}
+
+.svg path{
+    transition: all 1s;
+}
+
+.svg:hover {
+    transform: scale(1.5);
+}
+/* Стили шапки */
+
+.index {
+    height: 735px;
+    background-image: url(img/topback.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.top {
+
+    &__header {
+        height: 76px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+
+        &-input {
+            width: 288px;
+            height: 41px;
+            box-sizing: border-box;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 20px;
+            background-color: transparent;
+            outline: none;
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0%;
+            text-align: left;
+            padding-left: 32px;
+            padding-right: 32px;
+            font-family: inherit
+        }
+
+        &-input::placeholder {
+            color: rgb(255, 255, 255);
+        }
+
+        &-nav {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+
+            &-link {
+                font-size: 16px;
+                line-height: 20px;
+                color: gray;
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+
+            &-link:hover {
+                text-decoration: underline;
+            }
+
+            &-mobile {
+                display: none;
+            }
+        }
+    }
+
+    &__main {
+        padding-top: 64px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        flex-direction: column;
+    
+        &-heading {
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 70px;
+            color: rgb(255, 255, 255);
+            font-size: 64px;
+            font-weight: 600;
+            line-height: 70px;
+            letter-spacing: 0%;
+            text-align: left;
+            max-width: 792px;
+        }
+    
+        &-slogan {
+            font-size: 24px;
+            line-height: 32px;
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+    
+        &-link {
+            font-size: 16px;
+            line-height: 24px;
+            color: gray;
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: left;
+            text-decoration: underline;
+        }
+    
+        &-link:hover {
+            text-decoration: none;
+            color: gray;
+        }
+    }
+}
+
+/* Стили for */
+
+.for {
+    padding-top: 64px;
+
+    &__heading {
+        color: $dark;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 59px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-bottom: 32px;
+    }
+    
+    &__content {
+        display: grid;
+        gap: 32px;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    
+    &__item {
+        height: 415px;
+        grid-column: span 4;
+        color: rgb(255, 255, 255);
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 41px;
+        letter-spacing: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-big {
+            grid-column: span 6;
+        }
+        
+        &_1 {
+            background-image: url(img/for-1.jpg);
+        }
+        
+        &_2 {
+            background-image: url(img/for-2.jpg);
+        }
+        
+        &_3 {
+            background-image: url(img/for-3.jpg);
+        }
+        
+        &_4 {
+            background-image: url(img/for-4.jpg);
+        }
+        
+        &_5 {
+            background-image: url(img/for-5.jpg);
+        }
+    }
+}
+
+/* Стили продуктов */
+
+.product {
+    padding-top: 64px;
+
+    &__heading {
+        margin-bottom: 32px;
+        color: $dark;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 59px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 32px;
+        row-gap: 56px;
+    }
+    
+    &__box {
+        width: 378px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__img {
+        width: 100%;
+    }
+    
+    &__title {
+        margin-bottom: 8px;
+        color: $dark;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    
+    &__text {
+        padding-bottom: 12px;
+        color: $dark-grey;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    
+    &__price {
+        display: flex;
+        gap: 32px;
+    }
+    
+    &__cost {
+        color: rgb(5, 5, 5);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    
+    &__discount {
+        color: $dark-grey;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
+        text-decoration-line: line-through;
+    }
+    
+    &__footer {
+        margin-top: 40px;
+
+        &-link {
+            color: $dark;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: left;
+            text-decoration: underline;
+        }
+        
+        &-link:hover {
+            text-decoration: none;
+            color: gray;
+        }
+    }
+}
+
+/* Стили подвал */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 60px;
+    margin-top: 64px;
+    background: $light-grey;
+
+    &__content {
+        width: 792px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    } 
+    
+    &__info {
+        display: flex;
+        gap: 129px;
+    }
+    
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        &-list {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }&
+        
+        &-link {
+            color: gray;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 17px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+        
+        &-link:hover {
+            text-decoration: underline;
+        }
+    }
+    
+    &__heading {
+        color: $dark;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        &-link {
+            color: gray;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 17px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+        
+        &-link:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &__from {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        &-text {
+            color: $dark;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 15px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+        
+        &-input {
+            width: 260px;
+            height: 40px;
+            box-sizing: border-box;
+            border: 1px solid rgb(196, 196, 196);
+            border-radius: 16px;
+            background: rgb(255, 255, 255);
+            outline: none;
+            color: rgb(196, 196, 196);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 15px;
+            letter-spacing: 0%;
+            text-align: left;
+            padding-left: 16px;
+            padding-right: 16px;
+            font-family: inherit
+        }
+        
+        &-input::placeholder {
+            color: rgb(196, 196, 196);
+        }
+        
+        &-btn {
+            width: 260px;
+            height: 40px;
+            border-radius: 16px;
+            background: rgba(222, 215, 215, 0.41);
+            border: 1px solid transparent;
+            color: $dark;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 15px;
+            letter-spacing: 0%;
+            text-align: center;
+            font-family: inherit
+        }
+        
+        &-btn:hover {
+            background-color: black;
+            color: white
+        }
+    }
+}
+
+
+@import 'cart';
+@import 'catalog';
+@import 'tablet-index';
+@import 'tablet-catalog';
+@import 'tablet-cart';
+@import 'mobile-index';
+@import 'mobile-catalog';
+@import 'mobile-cart';

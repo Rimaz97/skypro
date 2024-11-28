@@ -1,0 +1,95 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 32px;
+    }    
+    
+    .top {
+    
+        &__header {
+            border: none;
+    
+            &-input {
+                display: none;
+            }
+    
+            &-nav {
+                display: none;
+    
+                &-mobile {
+                    display: flex;
+                    align-items: center;
+                    gap: 32px;
+    
+                    &-svg {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+    
+            &-logo {
+                width: 99px;
+            }
+        }
+    }
+
+    .catalog {
+
+        &__heading {
+            text-align: center;
+            margin-top: 88px;
+            padding-top: 0;
+            font-size: 48px;
+            line-height: 59px;
+        }
+    }
+
+    .product {
+
+        &__filters {
+            flex-wrap: wrap;
+        }
+
+        &__title {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__cost {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__filter{
+
+            &-form {
+                right: -170px;
+            }
+
+            &-content {
+                max-height: 1100px;
+                min-width: 1px;
+            }
+        }
+    }
+
+    .footer {
+        padding-bottom: 32px;
+        margin-top: 32px;
+
+        &__content {
+            justify-content: center;
+            gap: 34px;
+        }
+
+        &__info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 70px;
+            column-gap: 100px;
+        }
+    }
+}

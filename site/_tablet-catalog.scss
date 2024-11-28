@@ -1,0 +1,22 @@
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 393px);
+        padding-right: calc(50% - 393px);
+    }
+
+    .product__content {
+        row-gap: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 833px) {
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .product__filter-content {
+        max-height: 1100px;
+        min-width: 270px;
+    }
+}

@@ -1,0 +1,117 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 32px;
+    }
+
+    .top {
+
+        &__header {
+            border: none;
+
+            &-input {
+                display: none;
+            }
+
+            &-nav {
+                display: none;
+
+                &-mobile {
+                    display: flex;
+                    align-items: center;
+                    gap: 32px;
+
+                    &-svg {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+
+            &-logo {
+                width: 99px;
+            }
+        }
+    }
+
+    .basket {
+
+        &__heading {
+            text-align: center;
+            margin-top: 82px;
+            padding-top: 0;
+            font-size: 48px;
+            line-height: 59px;
+        }
+    }
+
+    .cart {
+        gap: 48px;
+        img {
+            display: none;
+        }
+
+        &__name {
+            display: none;
+        }
+
+        &__info {
+            gap: 8px;
+
+            &-heading {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 22px;
+            }
+
+            &-text {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 15px;
+                padding-bottom: 7px;
+            }
+
+            &-price {
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 15px;
+                padding-bottom: 7px;
+            }
+        }
+
+        &__button {
+            padding-top: 0;
+        }
+    }
+
+    .product {
+        padding-top: 48px;
+
+        &__title{
+            margin-bottom: 4px;
+        }
+
+        &__text {
+            padding-bottom: 8px;
+        }
+
+        &__discount {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+    }
+
+    .footer {
+        padding-bottom: 32px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 70px;
+
+        &__info {
+            gap: 100px;
+        }
+    }
+}
